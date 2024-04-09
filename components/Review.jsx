@@ -9,10 +9,9 @@ import { ReviewSec } from "../contants/index"
 const Review = () => (
   <div className="overflow-y-auto overflow-x-hidden">
     <div className="review gap-5">
-      {ReviewSec &&
-        ReviewSec.map((i) => {
+      {ReviewSec.map((item, index) => {
           return (
-            <div className="review_section p-3 bg-white">
+            <div key={index} className="review_section p-3 bg-white">
               <div className="flex items-center justify-between  ">
                 <div className="flex items-center justify-start gap-1">
                   <Image
@@ -76,8 +75,8 @@ const Review = () => (
             <span className="font-inter text-[9px] font-medium">traffic</span>
           </button> */}
                 <CustomButton
-                  title={ReviewSec.buttontitle}
-                  containerStyles={`${ReviewSec.buttonStyle} !pt-[0.2rem] !pb-[0.2rem] !pl-[0.5rem]  !pr-[0.5rem] border-[#A07C22] border-[1px] rounded-[15px] font-inter text-[9px] font-medium`}
+                  title={item.buttontitle}
+                  containerStyles={`${item.buttonStyle} !pt-[0.2rem] !pb-[0.2rem] !pl-[0.5rem]  !pr-[0.5rem] border-[#A07C22] border-[1px] rounded-[15px] font-inter text-[9px] font-medium`}
                 />
               </div>
             </div>
