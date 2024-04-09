@@ -1,10 +1,21 @@
-import React from 'react'
+'use client'
 import { Places } from "../contants";
 import { LiaLessThanSolid, LiaGreaterThanSolid } from "react-icons/lia";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
+import Modal from "./common/modal";
+import { useState } from "react";
 
 const Emptyreview = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+  };
   return (
     <>
       <div className="bg-[#F2F6FD] pt-[80px]">
@@ -46,10 +57,12 @@ const Emptyreview = () => {
           title="LEAVE A REVIEW"
           btnType="button"
           containerStyles="bg-[#3366FF] text-white w-[210px] font-inter font-semibold text-[14px] rounded-[6px]"
+          handleClick={handleModalOpen}
         />
+        <Modal isOpen={modalOpen} onClose={handleModalClose} />
       </div>
     </>
   );
-}
+};
 
-export default Emptyreview
+export default Emptyreview;

@@ -10,8 +10,8 @@ const page = () => {
   return (
     <div className="w-full  pt-[20px]">
       
-      {/* <Emptyreview /> */}
-      <Peoplereview />
+      <Emptyreview />
+      {/* <Peoplereview /> */}
     </div>
   );
 };

@@ -58,7 +58,7 @@ const Peoplereview = () => {
           </ul>
         </div>
       </div>
-      <div className="w-[90%] mx-auto mt-11 flex gap-5 items-start justify-between">
+      <div className="w-[90%] mx-auto mt-11 flex items-start justify-between">
         <div className="w-[50%]">
           {Reviews.map((item, index) => (
             <>
