@@ -104,9 +104,46 @@ export const Reviews = [
   {
     name: "James T.",
     time: "5 months ago",
-    comment: "There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.",
+    comment:
+      "There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.",
     like: "1224",
     dislike: "4",
     message: "24",
   },
-]
+  {
+    name: "Taiwo O. (Admin)",
+    time: "5 months ago",
+    comment:
+      "There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.",
+    like: "1224",
+    dislike: "4",
+    message: "24",
+  },
+  {
+    name: "James T.",
+    time: "5 months ago",
+    comment:
+      "There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.",
+    like: "1224",
+    dislike: "4",
+    message: "24",
+  },
+  {
+    name: "James T.",
+    time: "5 months ago",
+    comment:
+      "There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.",
+    like: "1224",
+    dislike: "4",
+    message: "24",
+  },
+  {
+    name: "James T.",
+    time: "5 months ago",
+    comment:
+      "There is no stable electricity. The roads are fairly good and there is a sense of community. The drainage system is poor and most residents litter their surroundings. There are several grocery stores and Supermarkets.",
+    like: "1224",
+    dislike: "4",
+    message: "24",
+  },
+];

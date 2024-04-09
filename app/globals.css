@@ -126,3 +126,6 @@ border-radius: 15px 0px 0px 0px;
 opacity: 0px;
 
 }
+.line {
+  border-bottom: 1px solid #888;
+}
