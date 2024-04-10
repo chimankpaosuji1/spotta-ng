@@ -18,7 +18,7 @@ const Emptyreview = () => {
   };
   return (
     <>
-      <div className="bg-[#F2F6FD] pt-[80px]">
+      <div className="bg-[#F2F6FD] pt-[100px]">
         <div className=" w-[90%] mx-auto flex flex-col items-start justify-start ">
           <div className="font-inter text-[24px] font-medium">
             Bonny and Clyde Street, Ajao Estate, Lagos

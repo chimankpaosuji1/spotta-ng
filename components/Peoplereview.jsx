@@ -20,7 +20,7 @@ const Peoplereview = () => {
   };
   return (
     <>
-      <div className="bg-[#F2F6FD] pt-[80px]">
+      <div className="bg-[#F2F6FD] pt-[100px]">
         <div className=" w-[90%] mx-auto">
           <div className="flex xl:items-center items-start xl:justify-between gap-2 xl:flex-row flex-col">
             <div>

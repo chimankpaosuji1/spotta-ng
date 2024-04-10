@@ -9,7 +9,7 @@ import withAuth from "../../components/ProtectedRoute";
 
 const page = () => {
   return (
-    <div className="w-full  pt-[20px]">
+    <div className="w-full">
       
       <Emptyreview />
       {/* <Peoplereview /> */}
