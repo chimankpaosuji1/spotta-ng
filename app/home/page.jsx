@@ -5,6 +5,7 @@ import Image from "next/image";
 import { CustomButton } from "../../components";
 import Emptyreview from "../../components/Emptyreview"
 import Peoplereview from "../../components/Peoplereview";
+import withAuth from "../../components/ProtectedRoute";
 
 const page = () => {
   return (
@@ -16,4 +17,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default (page);

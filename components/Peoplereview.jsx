@@ -1,3 +1,4 @@
+'use client'
 import { Places, Reviews } from "../contants";
 import { LiaLessThanSolid, LiaGreaterThanSolid } from "react-icons/lia";
 import Image from "next/image";
@@ -5,8 +6,18 @@ import CustomButton from "./CustomButton";
 import { CiShare2, CiBookmark } from "react-icons/ci";
 import { AiOutlineLike, AiOutlineDislike, AiFillStar } from "react-icons/ai";
 import { FaMessage } from "react-icons/fa6";
+import { useState } from "react";
 
 const Peoplereview = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+  };
   return (
     <>
       <div className="bg-[#F2F6FD] pt-[80px]">
@@ -28,7 +39,9 @@ const Peoplereview = () => {
                 title="LEAVE A REVIEW"
                 btnType="button"
                 containerStyles="bg-[#3366FF] text-white w-[210px] h-[50px] font-inter font-semibold text-[14px] rounded-[6px]"
+                handleClick={handleModalOpen}
               />
+              <Modal isOpen={modalOpen} onClose={handleModalClose} />
               <CiBookmark
                 size={50}
                 color="#3366FF"
@@ -73,9 +86,11 @@ const Peoplereview = () => {
                     height={20}
                     width={20}
                   />
-                  <p className="font-inter text-[14px] font-normal">{item.name}</p>
+                  <p className="font-inter text-[14px] font-normal">
+                    {item.name}
+                  </p>
                   <span className="font-inter text-[14px] font-normal opacity-70">
-                   {item.time}
+                    {item.time}
                   </span>
                 </div>
                 <div className="flex items-center justify-end gap-1">
@@ -88,9 +103,7 @@ const Peoplereview = () => {
                 </div>
               </div>
               <div>
-                <p>
-                  {item.comment}
-                </p>
+                <p>{item.comment}</p>
               </div>
 
               <div className="flex items-start justify-self mt-2 mb-5 gap-5">

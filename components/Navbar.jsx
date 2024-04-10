@@ -31,7 +31,7 @@ const NavBar = () => {
     checkAuthentication();
   }, [user]);
   return (
-    <header className="w-full bg-[#F2F6FD]  fixed z-10">
+    <header className="w-full fixed z-10">
       <nav className="w-[90%] mx-auto flex justify-between items-center py-4 bg-transparent">
         <Link href="/" className="flex justify-center items-center">
           <Image
